@@ -1,5 +1,9 @@
-# Vue 3 + TypeScript + Vite
+# Manhwa Slicer
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+`!!! this app requires local ffmpeg !!!`
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Application to slice long manhwa .png pages (drag-n-drop manhwa page into the main container)
+- LMB to manipulate slice zone
+- RMB to cut
+- Escape to cancel current action
+- "Generate video" button to export Zip Archive with prepared assests and .bat file to generate your slideshow with background mp4 file and soundtrack via local ffmpeg 
