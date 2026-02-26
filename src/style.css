@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@layer utilities {
+  .custom-scrollbar {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: theme('colors.gray.400') theme('colors.gray.100'); /* Firefox thumb and track */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px; /* Thin width for WebKit browsers */
+    height: 6px; /* For horizontal scrollbars */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: theme('colors.gray.100'); /* Track color */
+    border-radius: 3px; /* Rounded track */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: theme('colors.gray.400'); /* Thumb color */
+    border-radius: 3px; /* Rounded thumb */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.gray.500'); /* Hover effect for interactivity */
+  }
+
+  /* Dark mode variants */
+  .dark .custom-scrollbar {
+    scrollbar-color: theme('colors.gray.600') theme('colors.gray.900');
+  }
+
+  .dark .custom-scrollbar::-webkit-scrollbar-track {
+    background: theme('colors.gray.900');
+  }
+
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: theme('colors.gray.600');
+  }
+
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.gray.700');
+  }
+}
